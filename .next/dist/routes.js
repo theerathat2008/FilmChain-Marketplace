@@ -1,0 +1,8 @@
+'use strict';
+
+var routes = require('next-routes')();
+
+routes.add('/products/new', '/products/new').add('/products/:address', '/products/show').add('/products/:address/offers', '/products/offers/index').add('/products/:address/offers/new', '/products/offers/new').add('/products/:address/offers/withdraw', '/products/offers/withdraw').add('/products/:address/offers/offer-checkout', '/products/offers/offer-checkout').add('/products/:address/checkout/buycheckout', '/products/checkout/buycheckout').add('/products/:address/checkout/buytermconds', '/products/checkout/buytermconds').add('/reviews', 'reviews/index').add('/user/:address/show', '/user/show').add('/user/:address/view-info', '/user/view-info');
+
+module.exports = routes;
+//# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbInJvdXRlcy5qcyJdLCJuYW1lcyI6WyJyb3V0ZXMiLCJyZXF1aXJlIiwiYWRkIiwibW9kdWxlIiwiZXhwb3J0cyJdLCJtYXBwaW5ncyI6Ijs7QUFBQSxJQUFNLFNBQVMsQUFBZjs7QUFFQSxPQUNHLEFBREgsSUFDTyxBQURQLGlCQUN3QixBQUR4QixpQkFFRyxBQUZILElBRU8sQUFGUCxzQkFFNkIsQUFGN0Isa0JBR0csQUFISCxJQUdPLEFBSFAsNkJBR29DLEFBSHBDLDBCQUlHLEFBSkgsSUFJTyxBQUpQLGlDQUl3QyxBQUp4Qyx3QkFLRyxBQUxILElBS08sQUFMUCxzQ0FLNkMsQUFMN0MsNkJBTUcsQUFOSCxJQU1PLEFBTlAsNENBTW1ELEFBTm5ELG1DQU9HLEFBUEgsSUFPTyxBQVBQLDJDQU9rRCxBQVBsRCxrQ0FRRyxBQVJILElBUU8sQUFSUCw0Q0FRbUQsQUFSbkQsbUNBU0csQUFUSCxJQVNPLEFBVFAsWUFTbUIsQUFUbkIsaUJBVUcsQUFWSCxJQVVPLEFBVlAsdUJBVThCLEFBVjlCLGNBV0csQUFYSCxJQVdPLEFBWFAsNEJBV21DLEFBWG5DOztBQWNBLE9BQU8sQUFBUCxVQUFpQixBQUFqQiIsImZpbGUiOiJyb3V0ZXMuanMiLCJzb3VyY2VSb290IjoiL1VzZXJzL3RoZWVyYXRoYXQyMDA4L2ZpbG1jaGFpbmV0aGVyZXVtIn0=

@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>FilmChain Tokens Sales Initial Coin Offering</title>
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+  </head>
+  <body>
+
+    <div class="container" style="width: 700px;">
+      <div class="row">
+        <div class="col-lg-12">
+          <h1 class="text-center">FilmChain Tokens Sales Initial Coin Offering</h1>
+        </div>
+        <hr />
+        <br />
+
+      </div>
+      <div id="loader">
+        <p class="text-center">Page Loading...</p>
+      </div>
+
+      <div id="content" class="text-center" style="display: none;">
+        <h3>
+          FilmChain Token (FTC)!
+        </h3>
+        <br />
+        <h5>
+          This is a platform that allows FilmChain Token sales. In order to buy FilmChain Tokens,
+          insert amount of tokens you want to buy inside the input fields and click Buy Tokens.
+        </h5>
+        <h5>
+          MetaMask
+          will popup to confirm the transaction with the blockchain.
+        </h5>
+        <br />
+        <p>
+          1 FilmChain Token = <span class="token-price"></span> Ether.
+        </p>
+        <p>
+          You currently have
+          <span class="ftc-balance"></span>&nbsp;FTC.
+        </p>
+        <br />
+        <form onSubmit="App.buyTokens(); return false;" role="form">
+          <div class="form-group">
+            <div class="input-group">
+              <input id="numberOfTokens" class="form-control input-lg" type="number" name="number" value="1" min="1" pattern="[0-9]">
+              </input>
+
+              <span class="input-group-btn">
+                <button type="submit" class="btn btn-primary btn-lg">Buy Tokens</button>
+              </span>
+            </div>
+          </div>
+        </form>
+
+        <br />
+        <div class="progress">
+          <div id="progress" class="progress-bar progress-bar-striped active" aria-valuemin="0" aria-valuemax="100">
+
+          </div>
+        </div>
+
+        <p><span class="num-sold-tokens"></span> / <span class="tokens-free"></span> tokens sold</p>
+
+        <hr />
+        <p id="accountAddress">
+        </p>
+
+      </div>
+    </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/web3.min.js"></script>
+    <script src="js/truffle-contract.min.js"></script>
+    <script src="js/app.js"></script>
+  </body>
+</html>
